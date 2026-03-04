@@ -13,5 +13,9 @@
   "notion": {
     "type": "http",
     "url": "https://mcp.notion.com/mcp"
+  },
+  "excalidraw": {
+    "type": "http",
+    "url": "https://mcp.excalidraw.com/mcp"
   }
 }

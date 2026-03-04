@@ -76,9 +76,5 @@
   "axiom": {
     "type": "http",
     "url": "https://mcp.axiom.co/mcp"
-  },
-  "excalidraw": {
-    "type": "http",
-    "url": "https://mcp.excalidraw.com/mcp"
   }
 }
