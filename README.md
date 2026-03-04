@@ -115,6 +115,11 @@ export REDIS_USERNAME=""
 export REDIS_PASSWORD=""
 ```
 
+```bash
+# Optional: set this so the promote-skill can find the repo automatically
+export CAIS_PLUGINS_PATH="$HOME/path-to/cais-plugins"
+```
+
 After adding these, restart your terminal or run `source ~/.zshrc`.
 
 Servers that need env vars you haven't set will fail silently — this is fine.
