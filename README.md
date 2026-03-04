@@ -5,22 +5,30 @@ SaaS products.
 
 ## Plugins
 
-| Plugin               | Role        | What's included                                                          |
-| -------------------- | ----------- | ------------------------------------------------------------------------ |
-| **cais-core**        | All         | Team conventions, product context, `/brief` command, commit hooks        |
-| **cais-development** | Developer   | Dev practices, design system, `/standup`, `/review`, code reviewer agent |
-| **cais-marketing**   | Marketer    | Content creation, humanizer-pro, `/draft`, brand voice checker agent     |
-| **cais-business**    | Businessman | Business ops, `/pitch` command                                           |
+| Plugin               | Role        | What's included                                                                           |
+| -------------------- | ----------- | ----------------------------------------------------------------------------------------- |
+| **cais-core**        | All         | Team conventions, product context, tech stack & DB preferences, CI/CD standards, `/brief` |
+| **cais-development** | Developer   | Dev practices, design system, Next.js/React/Railway/Redis skills, `/standup`, `/review`   |
+| **cais-marketing**   | Marketer    | Content creation, humanizer-pro, WhatsApp Cloud API, Central Station, `/draft`            |
+| **cais-business**    | Businessman | Business ops, `/pitch` command                                                            |
 
 ## Installation
 
-### 1. Add the marketplace
+### Recommended: Install official Anthropic plugins
+
+We recommend all team members install relevant plugins from the
+[Claude official Anthropic plugin marketplace](https://github.com/anthropics/claude-code-plugins).
+
+> These are maintained by Anthropic and complement our internal Cais plugins
+> below.
+
+### 1. Add the Cais marketplace
 
 ```bash
 /plugin marketplace add your-org/cais-plugins
 ```
 
-### 2. Install plugins for your role
+### 2. Install Cais plugins for your role
 
 **Developer:**
 
@@ -68,23 +76,24 @@ a plugin, its MCP servers become available automatically — no manual
 
 ### cais-core (everyone)
 
-| Server           | Type | Auth                                                    |
-| ---------------- | ---- | ------------------------------------------------------- |
-| **github**       | HTTP | OAuth — authenticate once when prompted by Claude Code  |
+| Server            | Type | Auth                                                    |
+| ----------------- | ---- | ------------------------------------------------------- |
+| **github**        | HTTP | OAuth — authenticate once when prompted by Claude Code  |
 | **figma-desktop** | HTTP | None — connects to the Figma desktop app on `localhost` |
 
 ### cais-development (developers)
 
-| Server            | Type  | Auth                                           |
-| ----------------- | ----- | ---------------------------------------------- |
+| Server             | Type  | Auth                                            |
+| ------------------ | ----- | ----------------------------------------------- |
 | **supabase-local** | HTTP  | None — connects to local Supabase on port 54321 |
-| **Railway**       | stdio | None — runs via `npx`                          |
-| **next-devtools** | stdio | None — runs via `npx`                          |
-| **shadcn**        | stdio | None — runs via `npx`                          |
-| **trigger**       | stdio | None — runs via `npx`                          |
-| **sentry**        | HTTP  | OAuth — authenticate once when prompted        |
-| **n8n**           | stdio | Env vars (see below)                           |
-| **digitalocean**  | stdio | Env var (see below)                            |
+| **Railway**        | stdio | None — runs via `npx`                           |
+| **next-devtools**  | stdio | None — runs via `npx`                           |
+| **shadcn**         | stdio | None — runs via `npx`                           |
+| **trigger**        | stdio | None — runs via `npx`                           |
+| **sentry**         | HTTP  | OAuth — authenticate once when prompted         |
+| **n8n**            | stdio | Env vars (see below)                            |
+| **digitalocean**   | stdio | Env var (see below)                             |
+| **redis**          | stdio | Env vars (see below) — runs via Docker          |
 
 ### Environment variables for MCP servers
 
@@ -98,6 +107,12 @@ export N8N_MCP_TOKEN="your-n8n-api-token"
 
 # DigitalOcean (only if you manage infrastructure)
 export DIGITALOCEAN_API_TOKEN="dop_v1_your-token-here"
+
+# Redis (only if you use Redis MCP)
+export REDIS_HOST="localhost"
+export REDIS_PORT="6379"
+export REDIS_USERNAME=""
+export REDIS_PASSWORD=""
 ```
 
 After adding these, restart your terminal or run `source ~/.zshrc`.
@@ -107,8 +122,9 @@ Only set the ones you actually use.
 
 ## Bundled Skills
 
-Skills are bundled directly inside plugins. When you install a plugin, its skills
-become available as slash commands (e.g., `/cais-marketing:humanizer-pro`).
+Skills are bundled directly inside plugins. When you install a plugin, its
+skills become available as slash commands (e.g.,
+`/cais-marketing:humanizer-pro`).
 
 ### Third-party skills
 
