@@ -58,10 +58,11 @@
     "command": "docker",
     "args": [
       "run", "--rm", "--name", "redis-mcp-server", "-i",
-      "-e", "REDIS_HOST=localhost",
+      "-e", "REDIS_HOST=host.docker.internal",
       "-e", "REDIS_PORT=6379",
       "-e", "REDIS_USERNAME=default",
-      "-e", "REDIS_PWD="
+      "-e", "REDIS_PWD=",
+      "mcp/redis"
     ],
     "env": {}
   },
