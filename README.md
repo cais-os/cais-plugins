@@ -7,6 +7,7 @@ Shared skills, integrations, and conventions for the Cais team.
 | Plugin               | Who it's for | What you get                                                             |
 | -------------------- | ------------ | ------------------------------------------------------------------------ |
 | **cais-core**        | Everyone     | Team conventions, product context, tech stack defaults, commit standards |
+| **cais-general**     | Everyone     | Skill discovery, Figma, Notion, Excalidraw integrations                  |
 | **cais-development** | Developers   | Dev practices, design system, Railway/Next.js/React skills, code review  |
 | **cais-marketing**   | Marketers    | Content creation, brand voice checks, WhatsApp API, Canva                |
 | **cais-business**    | Business     | Business ops, pitch frameworks, Stripe, RevenueCat                       |

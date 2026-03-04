@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Plugin marketplace for the Cais team — an AI lab that creates and distributes SaaS products.",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "pluginRoot": "./plugins"
   },
   "plugins": [
@@ -13,11 +13,21 @@
       "name": "cais-core",
       "source": "./plugins/cais-core",
       "description": "Shared team conventions, product context, and commit hooks for all Cais roles.",
-      "version": "1.5.3",
+      "version": "1.6.0",
       "category": "team",
       "tags": ["conventions", "shared", "hooks"],
       "author": { "name": "Cais" },
       "keywords": ["team", "conventions", "saas", "startup"]
+    },
+    {
+      "name": "cais-general",
+      "source": "./plugins/cais-general",
+      "description": "General-purpose Claude Code skills and integrations for everyday productivity.",
+      "version": "1.0.0",
+      "category": "general",
+      "tags": ["skills", "integrations", "productivity"],
+      "author": { "name": "Cais" },
+      "keywords": ["general", "skills", "figma", "notion", "excalidraw"]
     },
     {
       "name": "cais-development",
