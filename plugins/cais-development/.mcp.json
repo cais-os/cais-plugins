@@ -64,5 +64,21 @@
       "-e", "REDIS_PWD=${REDIS_PASSWORD}"
     ],
     "env": {}
+  },
+  "vercel": {
+    "type": "http",
+    "url": "https://mcp.vercel.com/mcp"
+  },
+  "posthog": {
+    "type": "http",
+    "url": "https://mcp.posthog.com/mcp"
+  },
+  "axiom": {
+    "type": "http",
+    "url": "https://mcp.axiom.co/mcp"
+  },
+  "excalidraw": {
+    "type": "http",
+    "url": "https://mcp.excalidraw.com/mcp"
   }
 }

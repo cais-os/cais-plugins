@@ -1,0 +1,6 @@
+{
+  "revenuecat": {
+    "type": "http",
+    "url": "https://mcp.revenuecat.ai/mcp"
+  }
+}
