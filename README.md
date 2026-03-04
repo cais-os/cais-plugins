@@ -29,3 +29,14 @@ Shared skills, integrations, and conventions for the Cais team.
    ```
    /plugin
    ```
+4. Add the following to your personal `~/.claude/CLAUDE.md`:
+   ```markdown
+   ## Team Conventions
+
+   - **Always apply Cais team conventions.** At the start of every conversation,
+     use the `team-conventions` skill from `cais-core` to load company-wide naming
+     conventions, file structure patterns, documentation standards, and
+     decision-making guidelines.
+   - This applies to all work — new projects, feature development, code reviews,
+     and refactoring.
+   ```
