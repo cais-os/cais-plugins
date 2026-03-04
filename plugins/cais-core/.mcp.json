@@ -1,18 +1,17 @@
 {
   "github": {
     "type": "http",
-    "url": "https://api.githubcopilot.com/mcp/"
+    "url": "https://api.githubcopilot.com/mcp/",
+    "headers": {
+      "Authorization": "Bearer ${GITHUB_PAT}"
+    }
   },
   "figma-desktop": {
     "type": "http",
     "url": "http://127.0.0.1:3845/mcp"
   },
   "notion": {
-    "type": "stdio",
-    "command": "npx",
-    "args": ["-y", "@notionhq/notion-mcp-server"],
-    "env": {
-      "NOTION_TOKEN": "${NOTION_TOKEN}"
-    }
+    "type": "http",
+    "url": "https://mcp.notion.com/mcp"
   }
 }
