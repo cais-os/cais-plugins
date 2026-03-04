@@ -6,12 +6,12 @@ This repo is the **team plugin marketplace** for Cais — an AI lab that builds
 and distributes SaaS products. It contains four plugins, each targeting a
 different role:
 
-| Plugin               | Audience    | Use for                                            |
-| -------------------- | ----------- | -------------------------------------------------- |
-| **cais-core**        | Everyone    | Shared conventions, product context, commit hooks   |
-| **cais-development** | Developers  | Dev practices, design system, CI/CD, MCP servers    |
-| **cais-marketing**   | Marketers   | Content creation, brand voice, WhatsApp Cloud API   |
-| **cais-business**    | Business    | Strategy, pitch frameworks, metrics, Stripe/RevCat  |
+| Plugin               | Audience   | Use for                                            |
+| -------------------- | ---------- | -------------------------------------------------- |
+| **cais-core**        | Everyone   | Shared conventions, product context, commit hooks  |
+| **cais-development** | Developers | Dev practices, design system, CI/CD, MCP servers   |
+| **cais-marketing**   | Marketers  | Content creation, brand voice, WhatsApp Cloud API  |
+| **cais-business**    | Business   | Strategy, pitch frameworks, metrics, Stripe/RevCat |
 
 **Placement heuristic:** if a skill/command/agent is useful to everyone, put it
 in `cais-core`. If it targets a specific role, put it in that role's plugin.
@@ -64,11 +64,11 @@ version: 1.0.0
 ---
 ```
 
-| Field         | Required | Notes                                           |
-| ------------- | -------- | ----------------------------------------------- |
-| `name`        | Yes      | Kebab-case, must match the directory name        |
-| `description` | Yes      | Explains WHEN the skill should be invoked        |
-| `version`     | No       | Semver — omit if the skill is experimental       |
+| Field         | Required | Notes                                      |
+| ------------- | -------- | ------------------------------------------ |
+| `name`        | Yes      | Kebab-case, must match the directory name  |
+| `description` | Yes      | Explains WHEN the skill should be invoked  |
+| `version`     | No       | Semver — omit if the skill is experimental |
 
 ### Body
 
@@ -101,12 +101,12 @@ model: haiku
 ---
 ```
 
-| Field           | Required | Notes                                              |
-| --------------- | -------- | -------------------------------------------------- |
-| `description`   | Yes      | Shown in the command picker                         |
-| `argument-hint` | No       | Describes expected arguments in the UI              |
-| `allowed-tools` | No       | Comma-separated tool names the command may use      |
-| `model`         | No       | Override model (e.g., `haiku` for fast commands)    |
+| Field           | Required | Notes                                            |
+| --------------- | -------- | ------------------------------------------------ |
+| `description`   | Yes      | Shown in the command picker                      |
+| `argument-hint` | No       | Describes expected arguments in the UI           |
+| `allowed-tools` | No       | Comma-separated tool names the command may use   |
+| `model`         | No       | Override model (e.g., `haiku` for fast commands) |
 
 ### Template variables
 
@@ -138,13 +138,13 @@ tools: ["Read", "Grep", "Glob"]
 ---
 ```
 
-| Field         | Required | Notes                                                  |
-| ------------- | -------- | ------------------------------------------------------ |
-| `name`        | Yes      | Kebab-case slug                                         |
-| `description` | Yes      | Include `<example>` XML blocks with `<commentary>`     |
-| `model`       | No       | `haiku`, `sonnet`, `opus`, or `inherit`                 |
-| `color`       | No       | UI accent: `magenta`, `cyan`, `green`, etc.             |
-| `tools`       | No       | JSON array of tool names the agent can use              |
+| Field         | Required | Notes                                              |
+| ------------- | -------- | -------------------------------------------------- |
+| `name`        | Yes      | Kebab-case slug                                    |
+| `description` | Yes      | Include `<example>` XML blocks with `<commentary>` |
+| `model`       | No       | `haiku`, `sonnet`, `opus`, or `inherit`            |
+| `color`       | No       | UI accent: `magenta`, `cyan`, `green`, etc.        |
+| `tools`       | No       | JSON array of tool names the agent can use         |
 
 The body is the agent's system prompt, written in Markdown.
 
@@ -226,8 +226,8 @@ shell environment. Never commit actual secrets.
 
 ## Commit Messages
 
-Use [Conventional Commits](https://www.conventionalcommits.org/) with the
-plugin name as scope:
+Use [Conventional Commits](https://www.conventionalcommits.org/) with the plugin
+name as scope:
 
 ```
 feat(cais-core): add new tech-stack skill
@@ -253,8 +253,8 @@ chore: update marketplace metadata
 - Use [Semantic Versioning](https://semver.org/):
   - **patch** (e.g. `1.2.0` → `1.2.1`) — bug fixes, typo corrections, minor
     tweaks
-  - **minor** (e.g. `1.2.1` → `1.3.0`) — new skills, commands, hooks, agents,
-    or MCP servers added
+  - **minor** (e.g. `1.2.1` → `1.3.0`) — new skills, commands, hooks, agents, or
+    MCP servers added
   - **major** (e.g. `1.3.0` → `2.0.0`) — breaking changes to existing skills,
     commands, or plugin structure
 - The version field lives in each plugin's entry inside the root
@@ -272,11 +272,16 @@ Before committing changes to any plugin, verify:
 
 - [ ] **Frontmatter is valid** — all required fields present, YAML parses
       correctly
-- [ ] **Name matches directory/file** — `name` field equals the kebab-case
-      dir or filename
+- [ ] **Name matches directory/file** — `name` field equals the kebab-case dir
+      or filename
 - [ ] **Correct plugin** — skill placed in the right plugin for its audience
 - [ ] **Version bumped** — plugin version in `marketplace.json` incremented
       (minor for new content, patch for fixes)
 - [ ] **No secrets** — no API keys, tokens, or passwords in committed files
 - [ ] **Conventional Commit** — message follows `type(scope): description`
       format
+- [ ] **README updated (plugin changes)** — if a plugin was added, renamed, or
+      removed, update the plugin table and install instructions in `README.md`
+- [ ] **README updated (env variables)** — if an MCP server was added or removed
+      that requires a new environment variable (or removes one), update the
+      setup instructions in `README.md` so users know which keys to configure

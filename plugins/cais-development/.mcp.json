@@ -68,10 +68,7 @@
   },
   "vercel": {
     "type": "http",
-    "url": "https://mcp.vercel.com/mcp",
-    "headers": {
-      "Authorization": "Bearer ${VERCEL_TOKEN}"
-    }
+    "url": "https://mcp.vercel.com/mcp"
   },
   "posthog": {
     "type": "http",
