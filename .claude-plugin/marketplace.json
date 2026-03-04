@@ -13,7 +13,7 @@
       "name": "cais-core",
       "source": "./plugins/cais-core",
       "description": "Shared team conventions, product context, and commit hooks for all Cais roles.",
-      "version": "1.4.0",
+      "version": "1.5.0",
       "category": "team",
       "tags": ["conventions", "shared", "hooks"],
       "author": { "name": "Cais" },
