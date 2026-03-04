@@ -15,3 +15,6 @@
 - The version field lives in each plugin's entry inside the root
   `.claude-plugin/marketplace.json`.
 - If a single commit touches multiple plugins, bump each one independently.
+- **Also bump the top-level `metadata.version`** in
+  `.claude-plugin/marketplace.json` whenever any plugin is added, removed, or
+  the marketplace structure itself changes.
