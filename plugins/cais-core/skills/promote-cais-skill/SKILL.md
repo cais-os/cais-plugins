@@ -1,7 +1,7 @@
 ---
-name: promote-skill
+name: promote-cais-skill
 description: >-
-  Use when promoting a local skill to the team marketplace. Triggers on
+  Use when promoting a local skill to the cais plugins marketplace. Triggers on
   "promote skill", "share skill with team", "add to cais plugins",
   "move skill to marketplace", "publish skill".
 version: 1.0.0

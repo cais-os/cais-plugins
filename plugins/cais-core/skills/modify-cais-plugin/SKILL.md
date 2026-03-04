@@ -1,9 +1,9 @@
 ---
-name: modify-skill
+name: modify-cais-plugin
 description: >-
-  Use when creating or editing plugin skills, commands, or agents in the
+  Use when creating or editing cais plugin skills, commands, or agents in the
   cais-plugins repo. Triggers on "create skill", "new skill", "edit skill",
-  "add command", "add agent", "update plugin", "new command", "new agent".
+  "add command", "add agent", "update cais plugin", "new command", "new agent".
 version: 1.0.0
 ---
 
