@@ -1,9 +1,0 @@
-{
-  "name": "cais-core",
-  "version": "1.3.2",
-  "description": "Shared Cais team conventions, product context, and commit message hooks for all roles.",
-  "author": {
-    "name": "Cais"
-  },
-  "keywords": ["team", "conventions", "saas", "startup"]
-}
