@@ -29,32 +29,49 @@ apply to all team members and all products.
 - `docs/` — documentation
 - `chore/` — maintenance
 
+## Commit Messages
+
+Use [Conventional Commits](https://www.conventionalcommits.org/):
+
+| Prefix      | Use for                                  |
+| ----------- | ---------------------------------------- |
+| `feat:`     | New feature or capability                |
+| `fix:`      | Bug fix                                  |
+| `refactor:` | Code restructure without behavior change |
+| `docs:`     | Documentation only                       |
+| `chore:`    | Maintenance, deps, config                |
+
+**Format:** `type(scope): description` — scope is optional but encouraged (e.g.,
+`feat(auth): add magic-link login`).
+
+**Branch prefix vs commit prefix:** the branch prefix describes the overall goal
+(`feat/add-auth`), while each commit prefix describes what that specific commit
+does. They usually match, but a `feat/` branch can contain `fix:` or `refactor:`
+commits along the way.
+
 ## File Structure
 
-Every product follows this general pattern:
+Every product follows this monorepo pattern:
 
 ```
 product-name/
-├── .claude/           # AI conventions for this product
+├── apps/
+├── packages/             # Shared code (add only when needed)
+├── supabase/             # Database migrations
+├── .claude/
 │   └── CLAUDE.md
-├── .github/           # CI/CD workflows
-├── src/               # Source code
-├── supabase/          # Database migrations
+├── .vscode/
+│   └── terminals.json    # Terminals Manager config
+├── .github/              # CI/CD workflows
 └── README.md
 ```
 
+Use `packages/` only when two or more apps share code. Don't pre-create it.
+
 ## Documentation Standards
 
-- Every product has a CLAUDE.md at the project root.
-- Architecture decisions go in CLAUDE.md, not separate ADR files.
-- Keep READMEs focused on setup and usage, not architecture.
-
-## Decision Making
-
-- When multiple valid approaches exist, document the trade-offs briefly and pick
-  one.
-- Favor consistency with existing patterns over "better" alternatives.
-- If deviating from team conventions, document why in the project CLAUDE.md.
+- Architecture decisions go in CLAUDE.md and it must be kept up-to-date.
+- Keep the README focused on setup and usage, not architecture.
 
 ## Specialized Preferences
 

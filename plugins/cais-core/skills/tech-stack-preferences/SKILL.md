@@ -63,6 +63,7 @@ reason — and document why in `CLAUDE.md`.
 
 ### Add-ons
 
+- **Monorepo Tooling:** Turborepo (only when build performance is needed)
 - **VPS:** DigitalOcean
 - **Email:** Resend
 - **SMS + WhatsApp:** Twilio
@@ -91,7 +92,7 @@ Apply these across all projects unless there's a clear reason not to.
 
 ## After Scaffolding
 
-Generate a `CLAUDE.md` at the project root documenting:
+Generate a `CLAUDE.md` at `.claude/CLAUDE.md` documenting:
 
 - The stack chosen for this project (with any deviations from the default and
   why)
