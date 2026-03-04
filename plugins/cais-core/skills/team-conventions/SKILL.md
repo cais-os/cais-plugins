@@ -55,3 +55,22 @@ product-name/
   one.
 - Favor consistency with existing patterns over "better" alternatives.
 - If deviating from team conventions, document why in the project CLAUDE.md.
+
+## Specialized Preferences
+
+These skills contain detailed rules for specific domains. **Invoke them
+automatically** when the conversation enters their scope — don't wait for the
+user to ask.
+
+| Skill                    | Invoke when                                                  |
+| ------------------------ | ------------------------------------------------------------ |
+| `tech-stack-preferences` | Starting a project, choosing frameworks, adding dependencies |
+| `database-preferences`   | Schema changes, migrations, RLS policies, SQL DDL            |
+| `ci-cd-preferences`      | Creating or editing GitHub Actions workflows, deploy config  |
+
+## Supabase MCP
+
+- Use `supabase-local` by default for development
+- Only use `supabase` (production) when I explicitly mention production, cloud,
+  or deployment
+- When in doubt, ask before executing destructive operations
