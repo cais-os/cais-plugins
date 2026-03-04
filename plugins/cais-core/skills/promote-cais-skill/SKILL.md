@@ -3,7 +3,10 @@ name: promote-cais-skill
 description: >-
   Use when promoting a local skill to the cais plugins marketplace. Triggers on
   "promote skill", "share skill with team", "add to cais plugins",
-  "move skill to marketplace", "publish skill".
+  "move skill to marketplace", "publish skill", "push my skills to cais-plugins",
+  "move my global skills", "copy skills to the repo", "push skills to cais-development",
+  or any request to transfer skills from ~/.claude/skills or .claude/skills
+  into the cais-plugins repository.
 version: 1.0.0
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(cp:*), Bash(rm:*), Bash(git:*), Bash(mkdir:*), Bash(ls:*), Bash(cat:*), Bash(find:*)
 ---
