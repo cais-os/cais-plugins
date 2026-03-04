@@ -1,0 +1,9 @@
+{
+  "name": "cais-development",
+  "version": "1.0.0",
+  "description": "Cais development practices, design system, code review, and standup tools.",
+  "author": {
+    "name": "Cais"
+  },
+  "keywords": ["dev", "saas", "ci-cd", "design-system"]
+}

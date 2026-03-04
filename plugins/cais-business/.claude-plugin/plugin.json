@@ -1,0 +1,9 @@
+{
+  "name": "cais-business",
+  "version": "1.0.0",
+  "description": "Cais business operations, pitch frameworks, and metrics for strategy work.",
+  "author": {
+    "name": "Cais"
+  },
+  "keywords": ["business", "strategy", "pitch", "metrics"]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "cais-plugins",
+  "owner": {
+    "name": "Cais"
+  },
+  "metadata": {
+    "description": "Plugin marketplace for the Cais team — an AI lab that creates and distributes SaaS products.",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "cais-core",
+      "source": "./plugins/cais-core",
+      "description": "Shared team conventions, product context, and commit hooks for all Cais roles.",
+      "version": "1.0.0",
+      "category": "team",
+      "tags": ["conventions", "shared", "hooks"]
+    },
+    {
+      "name": "cais-development",
+      "source": "./plugins/cais-development",
+      "description": "Development practices, design system, code review, and standup for Cais developers.",
+      "version": "1.0.0",
+      "category": "development",
+      "tags": ["dev", "code-review", "ci-cd", "design-system"]
+    },
+    {
+      "name": "cais-marketing",
+      "source": "./plugins/cais-marketing",
+      "description": "Content creation, brand voice, and drafting tools for Cais marketers.",
+      "version": "1.0.0",
+      "category": "marketing",
+      "tags": ["content", "brand", "copywriting"]
+    },
+    {
+      "name": "cais-business",
+      "source": "./plugins/cais-business",
+      "description": "Business strategy, pitch frameworks, and metrics for Cais business operations.",
+      "version": "1.0.0",
+      "category": "business",
+      "tags": ["strategy", "pitch", "metrics"]
+    }
+  ]
+}
