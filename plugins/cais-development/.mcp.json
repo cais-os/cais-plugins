@@ -27,6 +27,10 @@
     "args": ["trigger.dev@latest", "mcp"],
     "env": {}
   },
+  "supabase": {
+    "type": "http",
+    "url": "https://mcp.supabase.com/mcp"
+  },
   "sentry": {
     "type": "http",
     "url": "https://mcp.sentry.dev/mcp"
@@ -48,5 +52,17 @@
     "env": {
       "DIGITALOCEAN_API_TOKEN": "${DIGITALOCEAN_API_TOKEN}"
     }
+  },
+  "redis": {
+    "type": "stdio",
+    "command": "docker",
+    "args": [
+      "run", "--rm", "--name", "redis-mcp-server", "-i",
+      "-e", "REDIS_HOST=${REDIS_HOST}",
+      "-e", "REDIS_PORT=${REDIS_PORT}",
+      "-e", "REDIS_USERNAME=${REDIS_USERNAME}",
+      "-e", "REDIS_PWD=${REDIS_PASSWORD}"
+    ],
+    "env": {}
   }
 }
