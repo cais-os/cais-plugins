@@ -23,11 +23,11 @@
       "name": "cais-general",
       "source": "./plugins/cais-general",
       "description": "General-purpose Claude Code skills and integrations for everyday productivity.",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "general",
       "tags": ["skills", "integrations", "productivity"],
       "author": { "name": "Cais" },
-      "keywords": ["general", "skills", "figma", "notion", "excalidraw"]
+      "keywords": ["general", "skills", "figma", "notion", "excalidraw", "playwright"]
     },
     {
       "name": "cais-development",
