@@ -3,18 +3,18 @@
 ## Repository Overview
 
 This repo is the **team plugin marketplace** for Cais — an AI lab that builds
-and distributes SaaS products. It contains four plugins, each targeting a
-different role:
+and distributes SaaS products. It contains plugins organized by product:
 
-| Plugin               | Audience   | Use for                                            |
-| -------------------- | ---------- | -------------------------------------------------- |
-| **cais-core**        | Everyone   | Shared conventions, product context, commit hooks  |
-| **cais-development** | Developers | Dev practices, design system, CI/CD, MCP servers   |
-| **cais-marketing**   | Marketers  | Content creation, brand voice, WhatsApp Cloud API  |
-| **cais-business**    | Business   | Strategy, pitch frameworks, metrics, Stripe/RevCat |
+| Plugin           | Audience     | Use for                                              |
+| ---------------- | ------------ | ---------------------------------------------------- |
+| **cais-core**    | Everyone     | Shared conventions, MCP servers, skills management   |
+| **cais-farol**   | Farol team   | Market research and competitive analysis             |
+| **cais-flow**    | Flow team    | Messaging automation and conversational workflows    |
+| **cais-content** | Content team | Content generation and distribution                  |
 
 **Placement heuristic:** if a skill/command/agent is useful to everyone, put it
-in `cais-core`. If it targets a specific role, put it in that role's plugin.
+in `cais-core`. If it targets a specific product, put it in that product's
+plugin.
 
 ---
 
@@ -220,7 +220,8 @@ shell environment. Never commit actual secrets.
   keys.
 - The `name` field in frontmatter **must match** the directory or file name
   (without extension).
-- Plugin names follow the pattern `cais-<role>`.
+- Plugin names follow the pattern `cais-<name>` (e.g., `cais-core`,
+  `cais-farol`).
 
 ---
 
