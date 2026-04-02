@@ -1,0 +1,20 @@
+{
+  "description": "Standalone skills recommended for the Cais team. Managed via /sync-manifest (contributors) and /update-skills (everyone).",
+  "skills": [
+    {
+      "source": "openclaw/openclaw",
+      "names": ["nano-banana-pro"],
+      "description": "Image generation via Gemini"
+    },
+    {
+      "source": "brandonwise/humanizer",
+      "names": ["humanizer"],
+      "description": "Content humanization — removes AI writing patterns"
+    },
+    {
+      "source": "vercel-labs/skills",
+      "names": ["find-skills", "ai-elements", "redis-development", "workflow", "agent-browser", "vercel-react-best-practices"],
+      "description": "Vercel agent skills ecosystem — general-purpose and React best practices"
+    }
+  ]
+}
