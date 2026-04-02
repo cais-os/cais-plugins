@@ -27,14 +27,6 @@
     "args": ["trigger.dev@latest", "mcp"],
     "env": {}
   },
-  "supabase": {
-    "type": "http",
-    "url": "https://mcp.supabase.com/mcp"
-  },
-  "sentry": {
-    "type": "http",
-    "url": "https://mcp.sentry.dev/mcp"
-  },
   "n8n": {
     "type": "stdio",
     "command": "npx",
@@ -66,26 +58,10 @@
     ],
     "env": {}
   },
-  "vercel": {
-    "type": "http",
-    "url": "https://mcp.vercel.com"
-  },
-  "posthog": {
-    "type": "http",
-    "url": "https://mcp.posthog.com/mcp"
-  },
-  "axiom": {
-    "type": "http",
-    "url": "https://mcp.axiom.co/mcp"
-  },
   "playwright": {
     "type": "stdio",
     "command": "npx",
     "args": ["@playwright/mcp@latest"],
     "env": {}
-  },
-  "postman": {
-    "type": "http",
-    "url": "https://mcp.postman.com/mcp"
   }
 }
