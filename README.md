@@ -25,13 +25,27 @@ export N8N_MCP_TOKEN="your-n8n-mcp-token"
 export DIGITALOCEAN_API_TOKEN="your-digitalocean-api-token"
 ```
 
-### 2. Add the Cais marketplace
+### 2. Disable claude.ai MCP servers
+
+To avoid duplication between the MCPs bundled in `cais-core` and the connectors
+from your claude.ai account, add this to your Claude Code settings
+(`~/.claude/settings.json`):
+
+```json
+{
+    "env": {
+        "ENABLE_CLAUDEAI_MCP_SERVERS": "false"
+    }
+}
+```
+
+### 3. Add the Cais marketplace
 
 ```
 /plugin marketplace add cais-os/cais-plugins
 ```
 
-### 3. Install the plugins you need
+### 4. Install the plugins you need
 
 ```
 /plugin
@@ -40,7 +54,7 @@ export DIGITALOCEAN_API_TOKEN="your-digitalocean-api-token"
 Browse the marketplace and install `cais-core` (everyone) plus any product
 plugins relevant to you.
 
-### 4. Add team conventions to your CLAUDE.md
+### 5. Add team conventions to your CLAUDE.md
 
 Add this to `~/.claude/CLAUDE.md`:
 
@@ -55,7 +69,7 @@ Add this to `~/.claude/CLAUDE.md`:
   and refactoring.
 ```
 
-### 5. Install standalone skills
+### 6. Install standalone skills
 
 Run `/update-skills` in Claude Code to install recommended standalone skills
 from the team manifest.
@@ -67,13 +81,9 @@ from the team manifest.
 Official third-party plugin marketplaces we use. Add each one in Claude Code and
 **enable auto-update** so skills stay current:
 
-| Tool / Framework | Install command                                          |
-| ---------------- | -------------------------------------------------------- |
-| Expo             | `/plugin marketplace add expo/skills`                    |
-| Railway          | `/plugin marketplace add railwayapp/railway-skills`      |
-| Vercel           | `/plugin marketplace add vercel-labs/agent-skills`       |
-| Supabase         | `/plugin marketplace add supabase/agent-skills`          |
-| PostHog          | `/plugin marketplace add PostHog/posthog-for-claude`     |
+| Tool / Framework | Install command                       |
+| ---------------- | ------------------------------------- |
+| Expo             | `/plugin marketplace add expo/skills` |
 
 After adding a marketplace, enable auto-update in the `/plugin` menu under
 Marketplaces.
@@ -83,24 +93,25 @@ Marketplaces.
 ## Recommended Official Plugins
 
 These are from the Anthropic official marketplace (`claude-plugins-official`)
-which is pre-installed in Claude Code. Just run `/plugin install` for each:
+which is pre-installed in Claude Code:
 
-| Plugin         | Install command                                            | What it does                          |
-| -------------- | ---------------------------------------------------------- | ------------------------------------- |
-| Stripe         | `/plugin install stripe@claude-plugins-official`           | Payment integration best practices    |
-| RevenueCat     | `/plugin install revenuecat@claude-plugins-official`       | In-app purchase management            |
-| Sentry         | `/plugin install sentry@claude-plugins-official`           | Error monitoring and issue tracking   |
-| Figma          | `/plugin install figma@claude-plugins-official`            | Design-to-code workflows              |
-| Notion         | `/plugin install notion@claude-plugins-official`           | Workspace and database integration    |
-| Postman        | `/plugin install postman@claude-plugins-official`          | API lifecycle management              |
-| Playwright     | `/plugin install playwright@claude-plugins-official`       | Browser automation and E2E testing    |
-| Chrome DevTools | `/plugin install chrome-devtools-mcp@claude-plugins-official` | Live Chrome inspection and debugging |
-| Slack          | `/plugin install slack@claude-plugins-official`            | Team messaging integration            |
-| GitHub         | `/plugin install github@claude-plugins-official`           | Repository and PR management          |
-| Superpowers    | `/plugin install superpowers@claude-plugins-official`      | Brainstorming, debugging, TDD skills  |
-| Feature Dev    | `/plugin install feature-dev@claude-plugins-official`      | Guided feature development workflow   |
-| PR Review      | `/plugin install pr-review-toolkit@claude-plugins-official` | Comprehensive PR review agents       |
-| Plugin Dev     | `/plugin install plugin-dev@claude-plugins-official`       | Tools for building Claude Code plugins |
+| Plugin            | Install command                                 |
+| ----------------- | ----------------------------------------------- |
+| Stripe            | `/plugin install stripe@…official`              |
+| RevenueCat        | `/plugin install revenuecat@…official`          |
+| Sentry            | `/plugin install sentry@…official`              |
+| Figma             | `/plugin install figma@…official`               |
+| Notion            | `/plugin install notion@…official`              |
+| Postman           | `/plugin install postman@…official`             |
+| Playwright        | `/plugin install playwright@…official`          |
+| Chrome DevTools   | `/plugin install chrome-devtools-mcp@…official` |
+| GitHub            | `/plugin install github@…official`              |
+| Superpowers       | `/plugin install superpowers@…official`         |
+| Feature Dev       | `/plugin install feature-dev@…official`         |
+| PR Review Toolkit | `/plugin install pr-review-toolkit@…official`   |
+| Plugin Dev        | `/plugin install plugin-dev@…official`          |
+
+> `@…official` is short for `@claude-plugins-official`.
 
 ---
 
