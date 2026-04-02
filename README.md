@@ -157,4 +157,5 @@ Code. They require local tools (Node.js, Docker) to be installed:
 | n8n            | stdio     | n8n workflow automation (needs `N8N_MCP_*`)                  |
 | digitalocean   | stdio     | DigitalOcean infrastructure (needs `DIGITALOCEAN_API_TOKEN`) |
 | redis          | stdio     | Redis via Docker                                             |
-| playwright     | stdio     | Browser automation and testing                               |
+| gmail          | HTTP      | Email search and drafts (Claude OAuth)                       |
+| gcal           | HTTP      | Calendar events and scheduling (Claude OAuth)                |

@@ -92,5 +92,13 @@
   "stripe-staging": {
     "type": "http",
     "url": "https://mcp.stripe.com"
+  },
+  "gmail": {
+    "type": "http",
+    "url": "https://gmail.mcp.claude.com/mcp"
+  },
+  "gcal": {
+    "type": "http",
+    "url": "https://gcal.mcp.claude.com/mcp"
   }
 }
