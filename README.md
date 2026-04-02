@@ -60,10 +60,12 @@ Add this to `~/.claude/CLAUDE.md`:
 Run `/update-skills` in Claude Code to install recommended standalone skills
 from the team manifest.
 
+---
+
 ## Recommended Plugin Marketplaces
 
-These are official third-party plugin marketplaces we use. Add each one and
-enable auto-update:
+Official third-party plugin marketplaces we use. Add each one in Claude Code
+and **enable auto-update** so skills stay current:
 
 | Tool / Framework   | Install command                                          |
 | ------------------ | -------------------------------------------------------- |
@@ -71,24 +73,60 @@ enable auto-update:
 | Railway            | `/plugin marketplace add railwayapp/railway-skills`      |
 
 After adding a marketplace, enable auto-update in the `/plugin` menu under
-Marketplaces so skills stay current.
+Marketplaces.
 
-## Recommended Remote MCPs
+---
 
-Add these individually in Claude Code or Claude Desktop settings. They are
-**not** bundled in the plugin to avoid duplication across environments:
+## Recommended MCPs
 
-| Service     | URL                                |
-| ----------- | ---------------------------------- |
-| Stripe      | `https://mcp.stripe.com/`         |
-| Figma       | `https://mcp.figma.com/mcp`       |
-| Notion      | `https://mcp.notion.com/mcp`      |
-| Sentry      | `https://mcp.sentry.dev/mcp`      |
-| Vercel      | `https://mcp.vercel.com`          |
-| PostHog     | `https://mcp.posthog.com/mcp`     |
-| Axiom       | `https://mcp.axiom.co/mcp`        |
-| Postman     | `https://mcp.postman.com/mcp`     |
-| Supabase    | `https://mcp.supabase.com/mcp`    |
-| Canva       | `https://mcp.canva.com/mcp`       |
-| RevenueCat  | `https://mcp.revenuecat.ai/mcp`   |
-| Excalidraw  | `https://mcp.excalidraw.com/mcp`  |
+We don't bundle remote MCPs in the plugin to avoid duplication between Claude
+Code and Claude Desktop. Instead, each team member adds them individually.
+
+### Built-in connectors (Claude Desktop)
+
+These are first-party integrations — just enable them in Claude Desktop under
+**Connectors**:
+
+| Connector        | What it does                          |
+| ---------------- | ------------------------------------- |
+| GitHub           | Issues, PRs, code search              |
+| Gmail            | Email search and drafts               |
+| Google Calendar  | Events, scheduling, free time         |
+| Google Drive     | File search and access                |
+| Figma            | Design context and screenshots        |
+| Notion           | Pages, databases, search              |
+| Canva            | Design generation and editing         |
+| Excalidraw       | Diagrams and whiteboarding            |
+| Sentry           | Error tracking and issue management   |
+| Stripe           | Payments, subscriptions, customers    |
+| Supabase         | Database, auth, edge functions        |
+| PostHog          | Analytics, feature flags, experiments |
+| Vercel           | Deployments, projects, logs           |
+
+### Custom connectors (manual setup)
+
+These require manual URL configuration in Claude Desktop or Claude Code:
+
+| Service     | URL                                | Notes                       |
+| ----------- | ---------------------------------- | --------------------------- |
+| Axiom       | `https://mcp.axiom.co/mcp`        | Observability and logging   |
+| Postman     | `https://mcp.postman.com/mcp`     | API testing and collections |
+| RevenueCat  | `https://mcp.revenuecat.ai/mcp`   | In-app purchases and subs   |
+
+### Local MCPs (bundled in cais-core)
+
+These are included in the `cais-core` plugin and work automatically in Claude
+Code. They require local tools (Node.js, Docker) to be installed:
+
+| Server         | Transport | What it does                        |
+| -------------- | --------- | ----------------------------------- |
+| github         | HTTP      | GitHub Copilot API (needs `GITHUB_PAT`) |
+| supabase-local | HTTP      | Local Supabase dev instance         |
+| Railway        | stdio     | Railway project management          |
+| next-devtools  | stdio     | Next.js dev tools                   |
+| shadcn         | stdio     | shadcn/ui component management      |
+| trigger        | stdio     | Trigger.dev task management         |
+| n8n            | stdio     | n8n workflow automation (needs `N8N_MCP_*`) |
+| digitalocean   | stdio     | DigitalOcean infrastructure (needs `DIGITALOCEAN_API_TOKEN`) |
+| redis          | stdio     | Redis via Docker                    |
+| playwright     | stdio     | Browser automation and testing      |
