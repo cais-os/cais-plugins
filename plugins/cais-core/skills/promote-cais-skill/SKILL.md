@@ -37,12 +37,12 @@ Ask the user to pick one if multiple exist.
 
 Ask or infer which plugin this skill belongs in:
 
-| Plugin               | Audience   | Use for                                    |
-| -------------------- | ---------- | ------------------------------------------ |
-| **cais-core**        | Everyone   | Shared conventions, product context        |
-| **cais-development** | Developers | Dev tools, design system, CI/CD            |
-| **cais-marketing**   | Marketers  | Content, brand voice, community            |
-| **cais-business**    | Business   | Strategy, pitch, metrics                   |
+| Plugin           | Audience     | Use for                                      |
+| ---------------- | ------------ | -------------------------------------------- |
+| **cais-core**    | Everyone     | Shared conventions, MCP servers, skills mgmt |
+| **cais-farol**   | Farol team   | Market research and competitive analysis     |
+| **cais-flow**    | Flow team    | Messaging automation and workflows           |
+| **cais-content** | Content team | Content generation and distribution          |
 
 ## Step 3 — Locate the cais-plugins repository
 

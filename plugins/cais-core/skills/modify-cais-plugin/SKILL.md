@@ -18,14 +18,14 @@ Ask the user (or infer from context):
 
 1. **Type:** skill, command, or agent?
 2. **Action:** creating new or editing existing?
-3. **Target plugin:** which of the four plugins?
-   - `cais-core` — shared across all roles
-   - `cais-development` — developer-specific
-   - `cais-marketing` — marketer-specific
-   - `cais-business` — business-specific
+3. **Target plugin:** which plugin?
+   - `cais-core` — shared across all team members
+   - `cais-farol` — market research (Farol product)
+   - `cais-flow` — messaging automation (Flow product)
+   - `cais-content` — content generation (Content product)
 
 If the user isn't sure which plugin, use this heuristic: if it's useful to
-everyone, it goes in `cais-core`. Otherwise, pick the role-specific plugin.
+everyone, it goes in `cais-core`. Otherwise, pick the product-specific plugin.
 
 ## Step 2 — Name and conflict check
 
