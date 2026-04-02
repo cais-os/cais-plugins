@@ -38,16 +38,6 @@
       "tags": ["messaging", "automation", "flow"],
       "author": { "name": "Cais" },
       "keywords": ["flow", "messaging", "whatsapp", "automation"]
-    },
-    {
-      "name": "cais-content",
-      "source": "./plugins/cais-content",
-      "description": "Content generation and distribution tools for Cais Content.",
-      "version": "0.1.0",
-      "category": "product",
-      "tags": ["content", "generation", "distribution"],
-      "author": { "name": "Cais" },
-      "keywords": ["content", "generation", "copywriting", "distribution"]
     }
   ]
 }
