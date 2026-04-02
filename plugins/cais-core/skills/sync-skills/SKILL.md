@@ -1,10 +1,10 @@
 ---
-name: sync-manifest
+name: sync-skills
 description: >-
   Sync the standalone skills manifest with your locally installed skills.
   For plugin contributors only. Reads npx skills ls -g and updates the
-  manifest in the cais-plugins repo. Triggers on "sync manifest",
-  "sync skills manifest", "update manifest".
+  manifest in the cais-plugins repo. Triggers on "sync skills",
+  "sync skills manifest", "update skills manifest".
 disable-model-invocation: true
 allowed-tools: Bash(npx:*) Read Write Edit
 ---
