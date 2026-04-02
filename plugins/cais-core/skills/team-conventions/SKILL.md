@@ -84,6 +84,7 @@ user to ask.
 | `tech-stack-preferences` | Starting a project, choosing frameworks, adding dependencies |
 | `database-preferences`   | Schema changes, migrations, RLS policies, SQL DDL            |
 | `ci-cd-preferences`      | Creating or editing GitHub Actions workflows, deploy config  |
+| `internal-tools`         | Scaffolding a new dashboard or internal tool UI              |
 
 ## Supabase MCP
 
