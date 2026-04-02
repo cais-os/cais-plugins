@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Plugin marketplace for the Cais team — an AI lab that creates and distributes SaaS products.",
-    "version": "1.1.2",
+    "version": "2.0.0",
     "pluginRoot": "./plugins"
   },
   "plugins": [
@@ -13,7 +13,7 @@
       "name": "cais-core",
       "source": "./plugins/cais-core",
       "description": "Shared team conventions, product context, and commit hooks for all Cais roles.",
-      "version": "1.6.6",
+      "version": "2.0.0",
       "category": "team",
       "tags": ["conventions", "shared", "hooks"],
       "author": { "name": "Cais" },

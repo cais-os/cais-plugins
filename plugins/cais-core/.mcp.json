@@ -1,1 +1,80 @@
-{}
+{
+  "github": {
+    "type": "http",
+    "url": "https://api.githubcopilot.com/mcp/",
+    "headers": {
+      "Authorization": "Bearer ${GITHUB_PAT}"
+    }
+  },
+  "supabase-local": {
+    "type": "http",
+    "url": "http://localhost:54321/mcp"
+  },
+  "Railway": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["@railway/mcp-server"],
+    "env": {}
+  },
+  "next-devtools": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["-y", "next-devtools-mcp@latest"],
+    "env": {}
+  },
+  "shadcn": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["shadcn@latest", "mcp"],
+    "env": {}
+  },
+  "trigger": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["trigger.dev@latest", "mcp"],
+    "env": {}
+  },
+  "n8n": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["-y", "mcp-remote", "${N8N_MCP_URL}", "--header", "Authorization: Bearer ${N8N_MCP_TOKEN}"],
+    "env": {
+      "MCP_MODE": "stdio",
+      "LOG_LEVEL": "error",
+      "DISABLE_CONSOLE_OUTPUT": "true"
+    }
+  },
+  "digitalocean": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["@digitalocean/mcp"],
+    "env": {
+      "DIGITALOCEAN_API_TOKEN": "${DIGITALOCEAN_API_TOKEN}"
+    }
+  },
+  "redis": {
+    "type": "stdio",
+    "command": "docker",
+    "args": [
+      "run", "--rm", "--name", "redis-mcp-server", "-i",
+      "-e", "REDIS_HOST=host.docker.internal",
+      "-e", "REDIS_PORT=6379",
+      "-e", "REDIS_USERNAME=default",
+      "-e", "REDIS_PWD=",
+      "mcp/redis"
+    ],
+    "env": {}
+  },
+  "playwright": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["@playwright/mcp@latest"],
+    "env": {}
+  },
+  "chrome-devtools": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["-y", "chrome-devtools-mcp@latest"],
+    "env": {}
+  }
+}
