@@ -83,5 +83,9 @@
     "command": "npx",
     "args": ["@playwright/mcp@latest"],
     "env": {}
+  },
+  "postman": {
+    "type": "http",
+    "url": "https://mcp.postman.com/mcp"
   }
 }

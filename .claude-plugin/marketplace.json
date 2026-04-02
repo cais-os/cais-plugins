@@ -33,7 +33,7 @@
       "name": "cais-development",
       "source": "./plugins/cais-development",
       "description": "Development practices, design system, code review, and standup for Cais developers.",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "category": "development",
       "tags": ["dev", "code-review", "ci-cd", "design-system"],
       "author": { "name": "Cais" },
