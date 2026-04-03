@@ -100,5 +100,9 @@
   "gcal": {
     "type": "http",
     "url": "https://gcal.mcp.claude.com/mcp"
+  },
+  "gemini": {
+    "type": "http",
+    "url": "https://gemini-api-docs-mcp.dev"
   }
 }

@@ -25,6 +25,11 @@
       "source": "triggerdotdev/skills",
       "names": ["trigger-agents", "trigger-config", "trigger-cost-savings", "trigger-realtime", "trigger-setup", "trigger-tasks"],
       "description": "Trigger.dev background jobs — setup, tasks, agents, realtime, config, and cost optimization"
+    },
+    {
+      "source": "google-gemini/gemini-skills",
+      "names": ["gemini-api-dev", "gemini-live-api-dev", "gemini-interactions-api"],
+      "description": "Google Gemini API development — standard API, Live API, and Interactions API"
     }
   ]
 }
