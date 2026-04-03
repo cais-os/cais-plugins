@@ -2,11 +2,6 @@
   "description": "Standalone skills recommended for the Cais team. Managed via /sync-manifest (contributors) and /update-skills (everyone).",
   "skills": [
     {
-      "source": "openclaw/openclaw",
-      "names": ["nano-banana-pro"],
-      "description": "Image generation via Gemini"
-    },
-    {
       "source": "brandonwise/humanizer",
       "names": ["humanizer"],
       "description": "Content humanization — removes AI writing patterns"
