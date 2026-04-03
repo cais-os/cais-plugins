@@ -13,8 +13,23 @@
     },
     {
       "source": "vercel-labs/skills",
-      "names": ["find-skills", "ai-elements", "redis-development", "workflow", "agent-browser", "vercel-react-best-practices"],
-      "description": "Vercel agent skills ecosystem — general-purpose and React best practices"
+      "names": ["find-skills"],
+      "description": "Vercel agent skills ecosystem — general-purpose utilities"
+    },
+    {
+      "source": "redis/agent-skills",
+      "names": ["redis-development"],
+      "description": "Redis data structures, query engine, vector search, and performance optimization"
+    },
+    {
+      "source": "sickn33/antigravity-awesome-skills",
+      "names": ["landing-page-generator"],
+      "description": "High-converting landing page generation with Next.js and Tailwind"
+    },
+    {
+      "source": "triggerdotdev/skills",
+      "names": ["trigger-agents", "trigger-config", "trigger-cost-savings", "trigger-realtime", "trigger-setup", "trigger-tasks"],
+      "description": "Trigger.dev background jobs — setup, tasks, agents, realtime, config, and cost optimization"
     }
   ]
 }
