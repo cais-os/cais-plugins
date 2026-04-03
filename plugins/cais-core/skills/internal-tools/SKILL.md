@@ -18,6 +18,8 @@ navigation conventions.
 
 Before applying this skill, also invoke:
 
+- **`scaffolding-preferences`** — for monorepo folder structure, gitignore
+  templates, and terminal layout
 - **`tech-stack-preferences`** — for the full stack (Next.js, shadcn, Tailwind,
   etc.)
 - **`team-conventions`** — for naming, file structure, and commit conventions

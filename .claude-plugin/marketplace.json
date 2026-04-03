@@ -13,7 +13,7 @@
       "name": "cais-core",
       "source": "./plugins/cais-core",
       "description": "Shared team conventions, MCP servers, and skills management for all Cais members.",
-      "version": "2.4.0",
+      "version": "2.5.0",
       "category": "team",
       "tags": ["conventions", "shared", "mcp", "skills"],
       "author": { "name": "Cais" },

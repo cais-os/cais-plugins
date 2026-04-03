@@ -79,12 +79,13 @@ These skills contain detailed rules for specific domains. **Invoke them
 automatically** when the conversation enters their scope — don't wait for the
 user to ask.
 
-| Skill                    | Invoke when                                                  |
-| ------------------------ | ------------------------------------------------------------ |
-| `tech-stack-preferences` | Starting a project, choosing frameworks, adding dependencies |
-| `database-preferences`   | Schema changes, migrations, RLS policies, SQL DDL            |
-| `ci-cd-preferences`      | Creating or editing GitHub Actions workflows, deploy config  |
-| `internal-tools`         | Scaffolding a new dashboard or internal tool UI              |
+| Skill                      | Invoke when                                                  |
+| -------------------------- | ------------------------------------------------------------ |
+| `scaffolding-preferences`  | Scaffolding a new project, setting up initial folder structure |
+| `tech-stack-preferences`   | Starting a project, choosing frameworks, adding dependencies |
+| `database-preferences`     | Schema changes, migrations, RLS policies, SQL DDL            |
+| `ci-cd-preferences`        | Creating or editing GitHub Actions workflows, deploy config  |
+| `internal-tools`           | Scaffolding a new dashboard or internal tool UI              |
 
 ## Supabase MCP
 

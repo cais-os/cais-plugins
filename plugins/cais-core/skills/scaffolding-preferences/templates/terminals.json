@@ -1,0 +1,49 @@
+{
+  "autorun": false,
+  "autokill": true,
+  "terminals": [
+    {
+      "name": "node",
+      "description": "Web server for local development",
+      "command": "cd apps/web && pnpm run dev"
+    },
+    {
+      "name": "backend",
+      "description": "Backend service local dev runner",
+      "command": "cd apps/api && pnpm run dev"
+    },
+    {
+      "name": "supabase",
+      "description": "Supabase local development server",
+      "command": "supabase start"
+    },
+    {
+      "name": "edge",
+      "description": "Supabase functions local development server",
+      "command": "supabase functions serve",
+      "split": "supabase"
+    },
+    {
+      "name": "stripe",
+      "description": "Stripe CLI commands",
+      "command": ""
+    },
+    {
+      "name": "webhooks",
+      "description": "Stripe webhook listener",
+      "command": "stripe listen --forward-to http://127.0.0.1:54321/functions/v1/stripe-webhook",
+      "split": "stripe"
+    },
+    {
+      "name": "ngrok-supabase",
+      "description": "Ngrok tunnel for external access to Supabase",
+      "command": "ngrok http 54321"
+    },
+    {
+      "name": "zsh",
+      "description": "The regular terminal",
+      "focus": true,
+      "command": ""
+    }
+  ]
+}
