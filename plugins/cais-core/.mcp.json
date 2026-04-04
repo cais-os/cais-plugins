@@ -52,7 +52,7 @@
       "DIGITALOCEAN_API_TOKEN": "${DIGITALOCEAN_API_TOKEN}"
     }
   },
-  "redis": {
+  "redis-local": {
     "type": "stdio",
     "command": "docker",
     "args": [
