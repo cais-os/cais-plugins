@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Plugin marketplace for the Cais team — an AI lab that creates and distributes SaaS products.",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "pluginRoot": "./plugins"
   },
   "plugins": [
@@ -13,7 +13,7 @@
       "name": "cais-core",
       "source": "./plugins/cais-core",
       "description": "Shared team conventions, MCP servers, and skills management for all Cais members.",
-      "version": "2.6.0",
+      "version": "2.7.0",
       "category": "team",
       "tags": ["conventions", "shared", "mcp", "skills"],
       "author": { "name": "Cais" },

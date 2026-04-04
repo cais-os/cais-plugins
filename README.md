@@ -6,7 +6,7 @@ Internal skills, conventions, and MCP servers for the Cais team.
 
 | Plugin           | Who it's for | What you get                                       |
 | ---------------- | ------------ | -------------------------------------------------- |
-| **cais-core**    | Everyone     | Team conventions, tech stack defaults, MCP servers |
+| **cais-core**    | Everyone     | Team conventions, tech stack defaults, MCP servers, agents |
 | **cais-farol**   | Farol team   | Market research and competitive analysis           |
 | **cais-flow**    | Flow team    | Messaging automation                               |
 | **cais-content** | Content team | Content generation and distribution                |
