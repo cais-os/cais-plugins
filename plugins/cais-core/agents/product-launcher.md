@@ -88,6 +88,7 @@ Work through all of these categories. Within each, use the numbered questions as
 a starting point — but add follow-ups based on the user's answers.
 
 **A. Product Identity & Story**
+
 1. What is the product name?
 2. What does it do in one sentence? (If the sentence has an "and" in it, push
    for a tighter focus — what's the ONE thing?)
@@ -98,109 +99,81 @@ a starting point — but add follow-ups based on the user's answers.
 5. What stage is it at? (Pre-launch, early access, launched, scaling)
 6. Is there an existing website, brand guide, or design system to reference?
 
-**B. Target Audience — Deep Profile**
-7. Who is the primary user? (Role, seniority, company size, industry)
-8. Who is the buyer if different from the user? (e.g., the user is a developer
-   but the buyer is a VP of Engineering)
-9. Describe your ideal customer in a sentence — if you could pick one person to
-   land on this page, who are they and what are they doing right before?
-10. What is their current level of awareness? (Unaware of the problem → aware
-    but no solution → comparing solutions → ready to buy)
-11. What are they searching for when they find you? (Literal search queries or
-    topics — this informs headline language)
-12. What alternatives or competitors are they using today?
-13. What specifically frustrates them about those alternatives? (The frustration
-    is your opening — be specific: "It's slow", "pricing is opaque", "no API")
+**B. Target Audience — Deep Profile** 7. Who is the primary user? (Role,
+seniority, company size, industry) 8. Who is the buyer if different from the
+user? (e.g., the user is a developer but the buyer is a VP of Engineering) 9.
+Describe your ideal customer in a sentence — if you could pick one person to
+land on this page, who are they and what are they doing right before? 10. What
+is their current level of awareness? (Unaware of the problem → aware but no
+solution → comparing solutions → ready to buy) 11. What are they searching for
+when they find you? (Literal search queries or topics — this informs headline
+language) 12. What alternatives or competitors are they using today? 13. What
+specifically frustrates them about those alternatives? (The frustration is your
+opening — be specific: "It's slow", "pricing is opaque", "no API")
 
-**C. Value Proposition — The Core Story**
-14. What is the #1 pain point the product solves?
-15. Walk me through a "day in the life" BEFORE the product — what does the
-    frustrating workflow look like? (Specific steps, tools, workarounds)
-16. Now walk me through the AFTER — same scenario, but with your product. What
-    changes? (Specific improvements, time saved, steps eliminated)
-17. What are the top 3-5 features to highlight? For EACH one:
-    - What does it do?
-    - Why does it matter to the user?
-    - How does it feel to use it? (Fast? Effortless? Powerful? Magical?)
-18. What makes this product fundamentally different from alternatives? Not just
-    "better" — what's the unique angle that no one else has?
+**C. Value Proposition — The Core Story** 14. What is the #1 pain point the
+product solves? 15. Walk me through a "day in the life" BEFORE the product —
+what does the frustrating workflow look like? (Specific steps, tools,
+workarounds) 16. Now walk me through the AFTER — same scenario, but with your
+product. What changes? (Specific improvements, time saved, steps eliminated) 17.
+What are the top 3-5 features to highlight? For EACH one: - What does it do? -
+Why does it matter to the user? - How does it feel to use it? (Fast? Effortless?
+Powerful? Magical?) 18. What makes this product fundamentally different from
+alternatives? Not just "better" — what's the unique angle that no one else has?
 19. Any quantifiable results or metrics? (e.g., "saves 10 hours/week", "3x
-    faster", "reduces errors by 80%")
-20. What's the "aha moment" — the point where a new user realizes this product
-    is worth it?
+faster", "reduces errors by 80%") 20. What's the "aha moment" — the point where
+a new user realizes this product is worth it?
 
-**D. Emotional Layer**
-21. How should a visitor FEEL when they land on this page? (Excited? Relieved?
-    Curious? Empowered? Understood?)
-22. What's the aspirational identity? (e.g., "I'm the kind of team that ships
-    fast", "I'm a data-driven marketer", "I'm ahead of the curve")
-23. Is there a transformation narrative? (What does the user become after
-    adopting this product — not just what they do differently, but who they
-    become?)
+**D. Emotional Layer** 21. How should a visitor FEEL when they land on this
+page? (Excited? Relieved? Curious? Empowered? Understood?) 22. What's the
+aspirational identity? (e.g., "I'm the kind of team that ships fast", "I'm a
+data-driven marketer", "I'm ahead of the curve") 23. Is there a transformation
+narrative? (What does the user become after adopting this product — not just
+what they do differently, but who they become?)
 
-**E. Objections & Trust**
-24. What are the top 3-5 reasons someone might NOT sign up after visiting the
-    page? (Price concerns? "I'll do it later"? Security worries? "Looks too
-    simple/complex"? Switching cost?)
-25. For each objection, how would you counter it? (This feeds directly into FAQ
-    and trust-building sections)
-26. Do you have testimonials, case studies, or customer quotes? (Get the exact
-    text, name, role, company if possible)
-27. Any notable metrics to display? (User count, uptime, NPS, satisfaction
-    score, revenue generated for customers)
-28. Press mentions, awards, partnerships, or notable customers/logos?
+**E. Objections & Trust** 24. What are the top 3-5 reasons someone might NOT
+sign up after visiting the page? (Price concerns? "I'll do it later"? Security
+worries? "Looks too simple/complex"? Switching cost?) 25. For each objection,
+how would you counter it? (This feeds directly into FAQ and trust-building
+sections) 26. Do you have testimonials, case studies, or customer quotes? (Get
+the exact text, name, role, company if possible) 27. Any notable metrics to
+display? (User count, uptime, NPS, satisfaction score, revenue generated for
+customers) 28. Press mentions, awards, partnerships, or notable customers/logos?
 29. Any security or compliance badges? (SOC 2, GDPR, HIPAA, encryption)
 
-**F. Conversion & Business**
-30. What is the primary action you want visitors to take? (Sign up, join
-    waitlist, start trial, book demo, buy now)
-31. What happens immediately after they take that action? (Onboarding flow,
-    confirmation email, demo call — this helps write the CTA)
-32. Is there a secondary action? (Watch demo, read docs, contact sales)
-33. Is there a pricing model to display? If so, describe each tier: name, price,
-    key features, who it's for.
-34. Any urgency or scarcity angle? (Limited beta spots, launch discount,
-    early-access perks, founding member pricing)
-35. What does success look like for this page? (Conversion rate target, number
-    of signups, email list size)
+**F. Conversion & Business** 30. What is the primary action you want visitors to
+take? (Sign up, join waitlist, start trial, book demo, buy now) 31. What happens
+immediately after they take that action? (Onboarding flow, confirmation email,
+demo call — this helps write the CTA) 32. Is there a secondary action? (Watch
+demo, read docs, contact sales) 33. Is there a pricing model to display? If so,
+describe each tier: name, price, key features, who it's for. 34. Any urgency or
+scarcity angle? (Limited beta spots, launch discount, early-access perks,
+founding member pricing) 35. What does success look like for this page?
+(Conversion rate target, number of signups, email list size)
 
-**G. Visual Direction & Assets**
-36. Link 2-3 landing pages you admire — what specifically do you like about
-    each? (Layout, tone, animations, simplicity, boldness)
-37. Do you have product screenshots or a demo video/GIF ready?
-38. Do you have a logo and brand colors? (Or should the agent use the default
-    shadcn neutral palette?)
-39. Do you have headshots or photos for testimonials?
-40. Any illustrations, icons, or visual assets to incorporate?
-41. Any imagery style preferences? (Abstract, photographic, illustrated, minimal,
-    dark mode, light mode)
+**G. Visual Direction & Assets** 36. Link 2-3 landing pages you admire — what
+specifically do you like about each? (Layout, tone, animations, simplicity,
+boldness) 37. Do you have product screenshots or a demo video/GIF ready? 38. Do
+you have a logo and brand colors? (Or should the agent use the default shadcn
+neutral palette?) 39. Do you have headshots or photos for testimonials? 40. Any
+illustrations, icons, or visual assets to incorporate? 41. Any imagery style
+preferences? (Abstract, photographic, illustrated, minimal, dark mode, light
+mode)
 
-**H. SEO & Launch Context**
-42. What keywords should this page rank for? (2-3 primary, 2-3 secondary)
-43. Is this tied to a specific launch event? (Product Hunt, blog post, PR push,
-    conference, ad campaign)
-44. Will you be driving paid traffic to this page? (Affects CTA and messaging)
-45. Any legal requirements? (Terms of service link, privacy policy, cookie
-    consent, compliance badges)
+**H. SEO & Launch Context** 42. What keywords should this page rank for? (2-3
+primary, 2-3 secondary) 43. Is this tied to a specific launch event? (Product
+Hunt, blog post, PR push, conference, ad campaign) 44. Will you be driving paid
+traffic to this page? (Affects CTA and messaging) 45. Any legal requirements?
+(Terms of service link, privacy policy, cookie consent, compliance badges)
 
-**I. Page Structure**
-46. Which sections do you want on the page? Pick from:
-    - Hero with headline + CTA
-    - Features / benefits grid
-    - How it works (step-by-step)
-    - Social proof / testimonials
-    - Metrics / stats bar
-    - Pricing table
-    - FAQ
-    - Comparison table (vs competitors)
-    - Waitlist / early access signup
-    - Demo / video embed
-    - Integration logos / partner badges
-    - Bottom CTA section
-    - Footer with links
-47. Any sections NOT listed above that you want? (Custom sections are fine)
-48. Any specific ordering preference, or should I recommend based on the
-    copywriting framework?
+**I. Page Structure** 46. Which sections do you want on the page? Pick from: -
+Hero with headline + CTA - Features / benefits grid - How it works
+(step-by-step) - Social proof / testimonials - Metrics / stats bar - Pricing
+table - FAQ - Comparison table (vs competitors) - Waitlist / early access signup
+- Demo / video embed - Integration logos / partner badges - Bottom CTA section -
+Footer with links 47. Any sections NOT listed above that you want? (Custom
+sections are fine) 48. Any specific ordering preference, or should I recommend
+based on the copywriting framework?
 
 #### Discovery Wrap-Up
 
@@ -269,26 +242,29 @@ everything that follows — any gaps here will show up as generic copy later.
 Three sub-phases: scaffold, draft copy, then generate code.
 
 **2a. Scaffold the project:**
+
 - Create a new Next.js project following the `scaffolding-preferences` skill
   (monorepo layout with `apps/web/`)
 - Initialize shadcn/ui with the neutral theme
 - Set up Tailwind CSS
 
-**2b. Draft copy (before any code):**
-Using the creative brief from Phase 1, write the actual copy for every section.
-Follow the `landing-page-generator` skill for copywriting frameworks (PAS, AIDA,
-or BAB — choose based on the creative brief).
+**2b. Draft copy (before any code):** Using the creative brief from Phase 1,
+write the actual copy for every section. Follow the `landing-page-generator`
+skill for copywriting frameworks (PAS, AIDA, or BAB — choose based on the
+creative brief).
 
 Present a **copy draft** to the user for approval:
+
 - Hero: headline, subheading, CTA text
 - Each section: heading, body copy, any micro-copy (button labels, badges)
 - FAQ: all questions and answers
 - Meta title and description
 
-Do NOT write code until the user approves the copy. Copy is the soul of the
-page — iterate here, not in JSX.
+Do NOT write code until the user approves the copy. Copy is the soul of the page
+— iterate here, not in JSX.
 
 **2c. Generate the landing page:**
+
 - Follow the `landing-page-generator` skill for component patterns and code
   conventions
 - Build each section using the approved copy — no placeholder text like "Lorem
@@ -303,7 +279,8 @@ page — iterate here, not in JSX.
 
 Create a GitHub repo on the `cais-os` organization and push the code.
 
-1. Initialize git: `git init && git add -A && git commit -m "feat: initial landing page"`
+1. Initialize git:
+   `git init && git add -A && git commit -m "feat: initial landing page"`
 2. Create the repo on GitHub using the GitHub MCP tools:
    - Organization: `cais-os`
    - Repo name: the product slug (e.g., `farol-landing`, `flow-landing`)
