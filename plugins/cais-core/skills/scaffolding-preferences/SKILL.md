@@ -140,6 +140,22 @@ Use the `split` property to group related services in the same terminal panel:
 - `autorun: false` — don't start terminals automatically
 - `autokill: true` — kill terminals when VS Code closes
 - Terminal names are lowercase, single-word or `ngrok-<target>`
+- **Always end with a `zsh` terminal** — every `terminals.json` MUST close with a
+  plain shell entry. This is non-negotiable, even for minimal projects that only
+  have one or two service terminals:
+
+  ```json
+  {
+    "name": "zsh",
+    "description": "The regular terminal",
+    "focus": true,
+    "command": ""
+  }
+  ```
+
+  It must use an empty `command` and `focus: true` so the developer lands in a
+  ready workspace shell when the terminals boot. No other terminal should have
+  `focus: true`.
 
 ## Scaffold Checklist
 
