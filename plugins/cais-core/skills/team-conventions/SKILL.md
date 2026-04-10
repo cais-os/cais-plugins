@@ -73,6 +73,27 @@ Use `packages/` only when two or more apps share code. Don't pre-create it.
 - Architecture decisions go in CLAUDE.md and it must be kept up-to-date.
 - Keep the README focused on setup and usage, not architecture.
 
+## Implementation Plans
+
+AI-generated implementation plans (e.g., from the `superpowers:writing-plans`
+skill or Claude Code's Plan Mode) are versioned alongside code in each repo.
+
+- **Path:** `docs/plans/YYYY-MM-DD-<feature-slug>.md`
+- **Naming:** ISO date prefix + kebab-case slug — sorts chronologically, gives
+  free "when was this planned" metadata.
+
+**Scope rule:**
+
+| Plan scope                                       | Lives in                 |
+| ------------------------------------------------ | ------------------------ |
+| Single product (feature work, refactors, fixes) | That product's repo      |
+| Cross-product, ecosystem, or shared research    | `cais-os` workspace repo |
+
+This overrides the `superpowers:writing-plans` default of
+`docs/superpowers/plans/` — the `superpowers/` segment is unnecessary in Cais
+repos, since plans are the same artifact regardless of which tool generated
+them.
+
 ## Specialized Preferences
 
 These skills contain detailed rules for specific domains. **Invoke them
